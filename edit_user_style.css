@@ -1,0 +1,58 @@
+/* edit_user_style.css */
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-top: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2e7d32;
+}
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #2e7d32;
+}
+.messages {
+    margin-bottom: 20px;
+}
+.messages .error {
+    color: #e53935;
+    margin-bottom: 8px;
+}
+.messages .success {
+    color: #388e3c;
+}
+a.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #388e3c;
+    text-decoration: none;
+    font-weight: 600;
+}
+a.back-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">FoodResQ</div>
+        <i class="fas fa-bars fa-4x" id="bar-icon"></i>
+        <nav  id="menu" class="hidden">
+            <ul>
+                <li><a class="nav_link" href="index.html">Home</a></li>
+                <li><a class="nav_link" href="about.html">About</a></li>
+                <li><a class="nav_link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav_link" href="#contact">Contact</a></li>
+                <li>
+                    <div class="acess_information">
+                    <a class="nav_link btn" href="Login.html">Login</a>
+                    <a class="btn" href="#">/</a>
+                    <a class="nav_link btn" href="Register.html">Sign Up</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="main-container">
+    <section class="User_register">
+        <h2 class="section-title text-center">Login</h2>
+        <div class="register">
+        <form class="form" action="Login.php" method="post">
+
+        <div class="form-control flex-center">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text" placeholder="Your Email" required>   
+        </div>
+
+        <div class="form-control flex-center">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" required>  
+        </div>
+
+           <div class="form-control flex-center form-btn">
+            <button type="submit" class="submit_btn">Login</button>
+           </div>
+            
+        </form>
+    </div>
+    </section>
+
+  </main>  
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FoodSave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="donation_body">
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">FoodSave</div>
+        <i class="fas fa-bars fa-4x" id="bar-icon"></i>
+        <nav  id="menu" class="hidden">
+            <ul>
+                <li><a class="nav_link" href="index.html">Home</a></li>
+                <li><a class="nav_link" href="about.html">About</a></li>
+                <li><a class="nav_link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav_link" href="#contact">Contact</a></li>
+                <li>
+                    <div class="acess_information">
+                    <a class="nav_link btn" href="Login.html">Login</a>
+                    <a class="btn" href="#">/</a>
+                    <a class="nav_link btn" href="Register.html">Sign Up</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+ <main class="donation">
+
+    <div class="container card">
+        <h2 class="donation-heading">Add New Waste Entry</h2>
+        <form class="wasteFrom">
+            <label for="item">Item Name</label>
+            <input type="text" id="item" placeholder="e.g., Tomatoes" required >
+
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="">Select a category</option>
+                <option value="">Fruits</option>
+                <option value="">Dairy</option>
+                <option value="">Meat & Seafood</option>
+                <option value="">Bakery</option>
+                <option value="">Prepared foods</option>
+                <option value="">Other</option>
+            </select>
+
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" step="0.1" value="0.0"
+            > 
+
+            <label for="unit">Unit</label>
+            <select name="unit" id="unit">
+                <option value="">kg</option>
+                <option value="">g</option>
+                <option value="">L</option>
+                <option value="">mL</option>
+                <option value="">pcs</option>
+            </select>
+
+            <label for="reason">Reason for Waste</label>
+            <select name="reason" id="reason">
+                <option value="">Select a reason</option>
+                <option value="">Expired</option>
+                <option value="">Spoiled</option>
+                <option value="">Over Production</option>
+                <option value="">Damaged</option>
+                <option value="">Other</option>
+            </select>
+
+            <label for="disposal">Disposal Method</label>
+            <select name="disposal" id="disposal">
+                <option value="">Select a method</option>
+                <option value="">Trash</option>
+                <option value="">Compost</option>
+                <option value="">Donation</option>
+                <option value="">Animal Feed</option>
+                <option value="">Other</option>
+            </select>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" value="YYYY/MM/DD">
+
+            <label for="notes">Notes (Optional)</label>
+            <textarea name="notes" id="notes" placeholder="Any additional information...."></textarea>
+
+            <div class="buttons">
+                <button type="submit" class="add-btn">Add Entry</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+        </form>
+    </div>
+ </main> 
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FoodSave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

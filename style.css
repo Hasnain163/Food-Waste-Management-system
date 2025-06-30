@@ -1,0 +1,628 @@
+/* Basic Reset common code */
+:root{
+    --primary-color:green;
+    --secondary-color:darkgreen;
+    --padding: 0.5rem;
+    --transition:all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color:black;
+}
+
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    transition: var(--transition);
+}
+
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,2002,1) ;
+  }
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_btn {
+    
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+    font-weight: bold;
+  }
+  .submit_btn:hover {
+    background-color: var(--secondary-color);
+  }
+
+
+/* Basic Reset common code end here*/
+
+/* header, main and footer jorne exect jaiga dei  */
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+
+
+/* Navigation */
+header {
+    background: green;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#bar-icon{
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li .acess_information{
+    background: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.btn{
+    color:green;
+    font-weight: bold;
+}
+
+.nav_link:hover{
+    color:black;
+    transition: all 0.4s linear;
+    display: inline-block;
+    transform: scale(1.3); 
+}
+
+
+
+/* Hero Section */
+
+.hero {
+    background: url('./profile\ 3.jpg') no-repeat center center/cover;
+
+    height: 90vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.hero .btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .how-it-works, .contact {
+    background: #f9f9f9;
+}
+
+.how-it-works .steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.work{
+text-decoration: none;
+color: inherit;
+transition: transform 0.2s ease;
+}
+
+.work:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,2002,1) ;
+}
+.step {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Register and login section start here */
+
+.main-container{
+   
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('./image\ 4.jpg'); /* Replace with your image file */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-control label{
+    flex: 0.15;
+}
+
+.form-control input,textarea,select{
+    flex: 0.85;
+    padding: var(--padding);
+    border: 1px solid;
+    border-radius: var(--border-radius);
+}
+
+.form-control textarea{
+    resize: none;
+    height: 12vh;
+}
+
+.form-control button{
+    border-radius: var(--border-radius);
+    width: 30%;
+    height: 30px;
+}
+
+.User_register{
+
+    background-color: rgba(255, 255, 255, 0.80); 
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  
+}
+
+.User_register:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,2002,1) ;
+}
+
+.register{
+    width: 45rem;  
+}
+
+
+/* Register section end here */
+
+
+/* donation info section start here */
+
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #34495e;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background-color: #2c3e50;
+}
+
+/* Main content next to sidebar */
+main.donation {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Profile icon in navbar */
+.profile-btn {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.donation_body {
+    background-color: #f0f9ff;
+    font-family: Arial, sans-serif;
+}
+
+.donation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.wasteForm label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.wasteForm input,
+.wasteForm select,
+.wasteForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wasteForm textarea {
+    height: 80px;
+    resize: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+.clear-btn:hover {
+    background-color: #b3b3b3;
+}
+
+
+/* donation info section end here */
+
+/* donor dashboard start here */
+/* General Body */
+.dashboard_body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f9ff;
+}
+
+/* Header */
+.donor_header {
+    background-color: green;
+    color: white;
+    padding: 17px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+#bar-icon {
+    cursor: pointer;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+} 
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: green;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+    background-color: #2c3e50;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 220px;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Dashboard Title */
+.dashboard-title h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.dashboard-title p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Cards Grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card Design */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-icon {
+    font-size: 28px;
+    color: #555;
+}
+
+/* donor dashboard end here */
+
+/* my donation page start here */
+/* Main Content */
+.my_container {
+    max-width: 900px;
+    margin: 100px 0 40px 460px; /* Adjusted for fixed header and sidebar */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.my_container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table */
+.my_container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+.my_container th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.my_container th {
+    background-color: #28a745;
+    color: white;
+}
+
+.my_container tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status Colors */
+.status-pending {
+    color: orange;
+    font-weight: bold;
+}
+.status-collected {
+    color: blue;
+    font-weight: bold;
+}
+.status-distributed {
+    color: green;
+    font-weight: bold;
+}
+
+/* my donation page end here */
+
+/* Footer section start here */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* Footer section end here */
+
+/* @media screen and (max-width:600px) {
+    #bar-icon{
+        display: block;
+        margin: 2rem 0;
+        color: #f8f7f7;
+        align-items: center;
+        justify-content: center;
+    }
+    .hidden{
+        display: none;
+    }
+} */
